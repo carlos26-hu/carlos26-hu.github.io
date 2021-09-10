@@ -11,44 +11,67 @@
 </head>
 
 <body>
-    <div class="container"> 
+    <div class="container">
         <div class="nav">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Navbar</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/about.html">Elérhetőség</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/menu.html">Étlap</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/actions.html" >Akciók</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/orders.html" >Rendelés</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div> 
-    <div class="contain">
-        <h1></h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">Elérhetőség</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/menu.html">Étlap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/actions.html">Akciók</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/orders.html">Rendelés</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="content content-menu">
+            <table id="products-food" class="table table-striped">
+                <thead>
+                    <h3 class="menu-h3">Ételválasztékunk:</h3>
+                    <tr>
+                        <th></th>
+                        <th>Termékek</th>
+                        <th>Összetevők</th>
+                        <th>Ár</th>
+                    </tr>
+                </thead>
+                <tbody id="food">
+                </tbody>
+            </table>
 
+            <table id="products-drink" class="table table-striped">
+                <thead>
+                    <h3 class="menu-h3">Italválasztékunk:</h3>
+                    <tr>
+                        <th></th>
+                        <th>Termékek:</th>
+                        <th>Mennyiség:</th>
+                        <th>Ár</th>
+                    </tr>
+                </thead>
+                <tbody id="food">
+                </tbody>
+            </table>
     </div>
-
-    </div>
+    <script src="/js/menu.js"></script>
 </body>
 
 </html>
