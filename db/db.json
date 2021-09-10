@@ -1,0 +1,77 @@
+{
+    "products_meat":[
+        {
+            "id":1,
+            "name":"Sima burger",
+            "comment":"puffancs, hús, saláta, hagyma, uborka, retek, ketchup, mustár",
+            "value":700
+        },
+        {
+            "id":2,
+            "name":"Hawai burger",
+            "comment":"puffancs, hús, saláta, sonka, sajt, ananász, majonéz",
+            "value":1000
+        },
+        {
+            "id":3,
+            "name":"Piedone burger",
+            "comment":"Puffancs, hús,zöldségek,szósz,bab",
+            "value":1000
+        },  
+         {
+            "id":4,
+            "name":"Lucifer",
+            "comment":"puffancs, hús, saláta, hagyma, uborka, retek, chil",
+            "value":1000
+        },
+           {
+            "id":5,
+            "name":"Vega burger",
+            "comment": "puffancs, saláta, sajt, gomba, hagyma, uborka, retek, paprika,ketchup, mustár",
+            "value":700
+        },
+           {
+            "id":6,
+            "name":"Baconos burger",
+            "comment":"puffancs, hús, saláta, bacon, hagyma, uborka, retek, mustár",
+            "value":700
+        }
+    ],
+
+    "products_drink":[
+        {
+            "id":1,
+            "name":"Canada Dry",
+            "quantitiy": "0,33l",
+            "value": 300
+        },
+        {
+            "id":2,
+            "name":"Canada Dry",
+            "quantitiy": "1,75l",
+            "value": 600
+        },   {
+            "id":3,
+            "name":"7up",
+            "quantitiy": "0,33l",
+            "value": 300
+        },   {
+            "id":4,
+            "name":"7up",
+            "quantitiy": "1,75l",
+            "value": 600
+        },   {
+            "id":5,
+            "name":"Pepsi",
+            "quantitiy": "0,33l",
+            "value": 300
+        },   {
+            "id":6,
+            "name":"Pepsi",
+            "quantitiy": "1,75l",
+            "value": 600
+        }
+
+
+    ]
+}

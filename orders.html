@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lib/bootstrap-5.1.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">Elérhetőség</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/menu.html">Étlap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/actions.html">Akciók</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/orders.html">Rendelés</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            
+            <form action="">
+                <fieldset class="customer">
+                     <legend>Rendelő Adatai</legend> 
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Név:</label>
+                        <input class="form-control" id="name" type="text" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Email:</label>
+                        <input class="form-control" id="email" type="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="address:">Cím:</label>
+                        <input class="form-control" id="address" type="text" required>
+                    </div>
+                    <div>
+                        <label class="form-label" for="comment">Megjegyzés:</label>
+                        <textarea class="form-control" name="comment" id="comment" rows="5"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="order">
+                    <legend>Rendelés Adatai:</legend>
+                    <span>Extra feltét:</span>
+                <div class="form-check">
+                    <input class="form-check-input" checked id="nothing"  name="extra" type="radio" value="0">
+                    <label class="form-label" for="nothing">Nem  kérek</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" checked id="cheese"  name="extra" type="radio" value="300">
+                    <label class="form-label" for="cheese">Sajt</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" checked id="double-cheese"  name="extra" type="radio" value="500">
+                    <label class="form-label" for="double-cheese">Dupla sajt</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" checked id="double-meat"  name="extra" type="radio" value="600">
+                    <label class="form-label" for="double-meat">Dupla hús</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" checked id="double-double"  name="extra" type="radio" value="1000">
+                    <label class="form-label" for="double-double">Dupla hús, sajt</label>
+                </div>
+                <div class="form-select">
+                    <label class="form-label" for="sauce">Szósz:</label>
+                    <select class="form-select" name="sauce" id="sauce">
+                        <option value="0">Hagyományos</option>
+                        <option value="100">Csipős:</option>
+                    </select>
+                </div>
+                <label class="form-label" for="quantity">Mennyiség:</label>
+                <input  id="quantity" name="quantity" type="number" min="1" max="10">
+                  </fieldset>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

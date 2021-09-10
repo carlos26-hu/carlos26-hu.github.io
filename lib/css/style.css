@@ -1,0 +1,102 @@
+@font-face{
+    @import url('https://fonts.googleapis.com/css2?family=Allison&family=Glory:ital,wght@0,200;0,400;1,400&family=Roboto:wght@400;700&display=swap')
+}
+
+body{
+    background-color:rgb(255, 208,8);
+}
+
+.nav-item{
+    border:solid 2px #28A745;
+    margin: 1%;
+    font-size: 20px;
+    box-shadow: 8px 8px 2px 1px chartreuse;
+}
+h1{
+    font-family: 'Glory,serif';
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #28A745;
+}
+h3{
+    font-family: 'Allison',cursive;
+    color: #28A745;
+}
+
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container{
+    background-color: aliceblue;
+    margin: 20px 0 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    
+}
+.content{
+display: inline;
+margin-top: 30px;
+}
+img{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+}
+
+.nav{
+    margin-top:50px;
+    justify-content: center;
+}
+.navbar{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#big-hamb{
+    margin-bottom: 30px;
+}
+#description{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.nyitva{
+display: flex;
+justify-content: flex-end;
+    color:red;
+}
+
+#opening{
+    caption-side: top;
+}
+#img-about{
+    background-size: 50%;
+    display: flex;
+    height: auto;
+    object-fit: cover;
+}
+form{
+    width: 50%;
+    margin: auto;
+    
+    
+
+}
+fieldset{
+    border:solid 2px rgb(194, 184, 184);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;;
+}
+/* élénk zöld  #28A745 */
