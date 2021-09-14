@@ -43,11 +43,11 @@
                 </div>
             </nav>
         </div>
-        <div class="content">
-            
+        <div class="content-order">
+
             <form action="">
                 <fieldset class="customer">
-                     <legend>Rendelő Adatai</legend> 
+                    <legend>Rendelő Adatai</legend>
                     <div class="mb-3">
                         <label class="form-label" for="name">Név:</label>
                         <input class="form-control" id="name" type="text" required>
@@ -65,47 +65,118 @@
                         <textarea class="form-control" name="comment" id="comment" rows="5"></textarea>
                     </div>
                 </fieldset>
+            </form>
+
+            <form action="">
                 <fieldset class="order">
                     <legend>Rendelés Adatai:</legend>
-                    <span>Extra feltét:</span>
-                <div class="form-check">
-                    <input class="form-check-input" checked id="nothing"  name="extra" type="radio" value="0">
-                    <label class="form-label" for="nothing">Nem  kérek</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" checked id="cheese"  name="extra" type="radio" value="300">
-                    <label class="form-label" for="cheese">Sajt</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" checked id="double-cheese"  name="extra" type="radio" value="500">
-                    <label class="form-label" for="double-cheese">Dupla sajt</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" checked id="double-meat"  name="extra" type="radio" value="600">
-                    <label class="form-label" for="double-meat">Dupla hús</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" checked id="double-double"  name="extra" type="radio" value="1000">
-                    <label class="form-label" for="double-double">Dupla hús, sajt</label>
-                </div>
-                <div class="form-select">
-                    <label class="form-label" for="sauce">Szósz:</label>
-                    <select class="form-select" name="sauce" id="sauce">
-                        <option value="0">Hagyományos</option>
-                        <option value="100">Csipős:</option>
-                    </select>
-                </div>
-                <div>
-                <label class="form-label" for="quantity">Mennyiség:</label>
-                <input  id="quantity" name="quantity" type="number" min="1" max="10">
-                 </div>
-                 <div><button id="sendOrders" class="btn btn-group btn-primary">Hozzáadás a kosárhoz</button></div>
-            </fieldset>
+                    <h3>A hamburger alapára:1000 Ft</h3>
+
+                    <!--  <div class="form-select">
+                        <div class="content-order-tab">
+                            <table id="products-food" class="table table-striped">
+                                <thead>
+                                    <h3 class="orders-h3">Ételválasztékunk:</h3>
+                                    <tr>
+                                        <th></th>
+                                        <th>Termékek</th>
+                                        <th>Összetevők</th>
+                                        <th>Ár</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="procuts-food">
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Nem kérek</td>
+                                        <td></td>
+                                        <td><div class="form-check">
+                                            <input class="form-check-input" id="products-food" name="products-food" onclick="handleFood(this);" 
+                                                type="radio" value="0"
+                                        </div></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <table id="products-drink" class="table table-striped">
+                                <thead>
+                                    <h3 class="orders-h3">Italválasztékunk:</h3>
+                                    <tr>
+                                        <th></th>
+                                        <th>Termékek:</th>
+                                        <th>Mennyiség:</th>
+                                        <th>Ár</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="drink">
+                                    <td></td>
+                                    <td></td>
+                                    <td>Nem kérek</td>
+                                    <td></td>
+                                    <td><div class="form-check">
+                                        <input class="form-check-input" onclick="handleDrink(this);" id="products-drink" name="products-drink"
+                                            type="radio" value="0">
+                                    </div></td>
+                                </tbody>
+                            </table>
+                        </div>
+             -->
+
+                    <span id="extra">Extra feltét:</span>
+                    <div class="form-check">
+                        <input class="form-check-input" onclick="handleClick(this);" id="nothing" name="extra"
+                            type="radio" value="0">
+                        <label class="form-label" for="nothing">Nem kérek</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" onclick="handleClick(this);" id="cheese" name="extra"
+                            type="radio" value="100">
+                        <label class="form-label" for="cheese">Sajt</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" onclick="handleClick(this);" id="double-cheese" name="extra"
+                            type="radio" value="200">
+                        <label class="form-label" for="double-cheese">Dupla sajt</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" onclick="handleClick(this);" id="double-meat" name="extra"
+                            type="radio" value="300">
+                        <label class="form-label" for="double-meat">Dupla hús</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" onclick="handleClick(this);" id="double-double" name="extra"
+                            type="radio" value="500">
+                        <label class="form-label" for="double-double">Dupla hús, sajt</label>
+                    </div>
+
+                    <div class="form-select">
+                        <label class="form-label" for="sauce">Szósz:</label>
+                        <select class="form-select" name="sauce" id="sauce" onchange="handleSelect(this);">
+                            <option value="0">Hagyományos <span class="option-span">0Ft</span> </option>
+                            <option value="100">Csipős<span class="option-span">100Ft</span></option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label" for="quantity">Mennyiség:</label>
+                        <input id="quantity" name="quantity" type="number" onchange="handlequan(this)" value="1" min="1"
+                            max="10">
+                    </div>
+                    <div class="form-group">
+                        Fizetendő: <span class="show-total">0</span>Ft
+                    </div>
+                    <div><button id="sendOrders" class="btn btn-group btn-primary">Hozzáadás a kosárhoz</button>
+                    </div>
+                </fieldset>
             </form>
 
         </div>
 
     </div>
+    <script src="/lib/bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    <script src="/js/orders.js"></script>
 </body>
 
 </html>

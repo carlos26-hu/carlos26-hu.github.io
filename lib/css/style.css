@@ -8,7 +8,7 @@ body{
 
 .nav-item{
     border:solid 2px #28A745;
-    margin: 1%;
+    margin: 2%;
     font-size: 20px;
     box-shadow: 8px 8px 2px 1px chartreuse;
 }
@@ -36,9 +36,9 @@ p{
 
 .container{
     background-color: aliceblue;
-    margin: 20px 0 50px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom:  30px;
     width: 70%;
     
 }
@@ -52,7 +52,6 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 20px;
 }
-
 .nav{
     margin-top:50px;
     justify-content: center;
@@ -60,6 +59,7 @@ margin-top: 20px;
 .navbar{
     margin-top: 25px;
     margin-bottom: 50px;
+    
 }
 
 #big-hamb{
@@ -94,15 +94,22 @@ form{
 
 }
 fieldset{
-    border:solid 2px rgb(194, 184, 184);
+    border:solid 2px #28A745;
+    padding: 15px;
+    border-radius: 30px;
     margin-top: 30px;
     margin-bottom: 20px;
-    padding-bottom: 30px;;
+    padding-bottom: 30px;
 }
 
-.table{
+.menu-table{
     width: 60%;
     margin: auto;
+    border:solid 2px #28A745;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
 
 }
 .menu-h3{
@@ -110,4 +117,19 @@ fieldset{
     margin-top: 30px;
     margin-bottom: 20px;
 }
+/*
+.content-order{
+    display:flex;
+    gap: 10px;
+}
+
+.customer{
+    margin-top: -672px;
+}
+
+input.table-td{
+    display:inline;
+    width: 50%;
+    color:red;
+}*/
 /* élénk zöld  #28A745 */
