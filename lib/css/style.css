@@ -42,28 +42,42 @@ p{
     width: 70%;
     
 }
+#big-hamb{
+    display:block;
+    max-width: 400px;
+    width: 100%;
+    height:auto;
+    margin: 30px auto;
+
+}
+
+#action-hamb{
+    display:block;
+    max-width: 800px;
+    width: 100%;
+    height:auto;
+    margin: 30px auto;
+
+}
 .content{
 display: inline;
 margin-top: 30px;
 }
-img{
+#img-about{
     display: block;
-margin-left: auto;
-margin-right: auto;
-margin-top: 20px;
-}
-.nav{
-    margin-top:50px;
     justify-content: center;
-}
-.navbar{
-    margin-top: 25px;
-    margin-bottom: 50px;
-    
+    gap:50px;
+margin-top: 100px;
 }
 
-#big-hamb{
-    margin-bottom: 30px;
+.nav{
+    margin-top:100px;
+    justify-content: center;
+
+}
+.navbarNav{
+    margin: 50px auto;
+    
 }
 #description{
     margin-top: 50px;
@@ -116,6 +130,42 @@ fieldset{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
+}
+
+.weather{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.weather h3,h3 {
+text-align: center;
+
+}
+.weather h4{
+    margin-top: 10px;
+    font-family: Allison;
+    font-size: 26px;
+    color:#28A745;
+}
+
+.daily-offer{
+    margin-top: 40px;
+    color:red;
+
+}
+
+.temp-minmax{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+.temp-minmax span{
+    display: flex;
+    justify-content: center;
+    
+    color:red;
 }
 /*
 .content-order{
