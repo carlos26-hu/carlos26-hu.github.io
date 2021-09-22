@@ -11,7 +11,34 @@
 </head>
 
 <body>
+
+
     <div class="container">
+        <div class="contain-weather">
+            <h3>Időjárás</h3>
+            <Div class="weather row">
+
+                <Div class=" col-12 col-md-3">
+                    <h4><span class="show-Day"></span></h4>
+                </Div>
+
+                <div class=" col-12 col-md-6 daily-offer">
+                    <h3> <span id="daily-offer"></span> </h3>
+                </div>
+
+                <div class=" col-12 col-md-3 weather-form">
+                    <div>A mai várható csúcshőmérséklet: <h3 class="today-temp"></h3>
+                    </div>
+                </div>
+
+            </Div>
+            <div class="temp-minmax row">
+                <div class=" col-12 col-md-4">A heti minimum hőmérséklet: <span id="tempMin"></span> </div>
+                <div class=" col-12 col-md-4" id="tempAvg">A heti átlag hőmérséklet:<span id="tempAvg"></span></div>
+                <div class=" col-12 col-md-4" id="tempMax">A heti maximum hőmérséklet: <span id="tempMax"></span></div>
+            </div>
+
+        </div>
         <div class="nav">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -35,7 +62,7 @@
                                 <a class="nav-link" href="/actions.html">Akciók</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/orders.html" >Rendelés</a>
+                                <a class="nav-link" href="/orders.html">Rendelés</a>
                             </li>
                         </ul>
                     </div>
@@ -46,16 +73,18 @@
             <h1>Elérhetőségünk:</h1>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h3>Címünk: </h3>
+                    <h3 class="h3-about">Címünk: </h3>
                     <h5>Szárazd, Tas vezér u.126</h5>
-                    <h3>Tel:</h3>
+                    <h3 class="h3-about">Tel:</h3>
                     <h5> (74) 891-945</h5>
                 </div>
                 <div class="nyitva  col-md-6">
 
 
                     <table id="opening">
-                        <caption> <h3>Nyitvatartás:</h3></caption>
+                        <caption>
+                            <h3>Nyitvatartás:</h3>
+                        </caption>
                         <thead>
                             <tr>
                                 <th></th>
@@ -85,11 +114,12 @@
             </div>
             <div id="img-about">
                 <img src="/img/20160709-balaton 022.jpg" alt="">
-               <img src="/img/Szárazd2.jpg" alt="">
+                <img src="/img/Szárazd2.jpg" alt="">
             </div>
         </div>
     </div>
     <script src="/lib/bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>

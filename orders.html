@@ -12,6 +12,31 @@
 
 <body>
     <div class="container">
+        <div class="contain-weather">
+            <h3>Időjárás</h3>
+            <Div class="weather row">
+
+                <Div class=" col-12 col-md-3">
+                    <h4><span class="show-Day"></span></h4>
+                </Div>
+
+                <div class=" col-12 col-md-6 daily-offer">
+                    <h3> <span id="daily-offer"></span> </h3>
+                </div>
+
+                <div class=" col-12 col-md-3 weather-form">
+                    <div>A mai várható csúcshőmérséklet: <h3 class="today-temp"></h3>
+                    </div>
+                </div>
+
+            </Div>
+            <div class="temp-minmax row">
+                <div class=" col-12 col-md-4">A heti minimum hőmérséklet: <span id="tempMin"></span> </div>
+                <div class=" col-12 col-md-4" id="tempAvg">A heti átlag hőmérséklet:<span id="tempAvg"></span></div>
+                <div class=" col-12 col-md-4" id="tempMax">A heti maximum hőmérséklet: <span id="tempMax"></span></div>
+            </div>
+
+        </div>
         <div class="nav">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -177,6 +202,7 @@
     </div>
     <script src="/lib/bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
     <script src="/js/orders.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>

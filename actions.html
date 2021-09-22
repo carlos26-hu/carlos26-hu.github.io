@@ -14,40 +14,40 @@
     <div class="container">
         <div class="contain-weather">
             <h3>Időjárás</h3>
-            <Div class="weather">
+            <Div class="weather row">
 
-                <Div>
+                <Div class=" col-12 col-md-3">
                     <h4><span class="show-Day"></span></h4>
                 </Div>
 
-                <div class="daily-offer">
+                <div class=" col-12 col-md-6 daily-offer">
                     <h3> <span id="daily-offer"></span> </h3>
                 </div>
 
-                <div class="weather-form">
+                <div class=" col-12 col-md-3 weather-form">
                     <div>A mai várható csúcshőmérséklet: <h3 class="today-temp"></h3>
                     </div>
                     <form action="">
                         <select class="form-check" name="weather-day" id="weather-day">
-                            <option class= "weather-day" value="6">Vasárnap </option>
-                            <option class= "weather-day" value="0">Hétfő </option>
-                            <option class= "weather-day" value="1">Kedd </option>
-                            <option class= "weather-day" value="2">Szerda </option>
-                            <option class= "weather-day" value="3">Csütörtök </option>
-                            <option class= "weather-day" value="4">Péntek </option>
-                            <option class= "weather-day" value="5">Szombat </option>
-                            
+                            <option class="weather-day" value="6">Vasárnap </option>
+                            <option class="weather-day" value="0">Hétfő </option>
+                            <option class="weather-day" value="1">Kedd </option>
+                            <option class="weather-day" value="2">Szerda </option>
+                            <option class="weather-day" value="3">Csütörtök </option>
+                            <option class="weather-day" value="4">Péntek </option>
+                            <option class="weather-day" value="5">Szombat </option>
+
                         </select>
-                        <button type="radio"  class="btn btn-primary" id="offer-btn" onclick="showDailyOffer()" >Nap
+                        <button type="radio" class="btn btn-primary" id="offer-btn" onclick="showDailyOffer()">Nap
                             kiválasztása</button>
                     </form>
                 </div>
 
             </Div>
-            <div class="temp-minmax">
-                <div >A heti legalacsonyabb hőmérséklet: <span id="tempMin"></span> </div>
-                <div id="tempAvg">A heti átlag hőmérséklet:<span id="tempAvg"></span></div>
-                <div id="tempMax">A heti legmagasabb hőmérséklet: <span id="tempMax"></span></div>
+            <div class="temp-minmax row">
+                <div class=" col-12 col-md-4">A heti minimum hőmérséklet: <span id="tempMin"></span> </div>
+                <div class=" col-12 col-md-4" id="tempAvg">A heti átlag hőmérséklet:<span id="tempAvg"></span></div>
+                <div class=" col-12 col-md-4" id="tempMax">A heti maximum hőmérséklet: <span id="tempMax"></span></div>
             </div>
 
         </div>
@@ -89,8 +89,11 @@
 
         </div>
     </div>
-    <script src="/action.js"></script>
-    <script src="/lib/bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    <div class="container">
+
+        <script src="/action.js"></script>
+        <script src="/lib/bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    </div>
 </body>
 
 </html>
